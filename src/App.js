@@ -7,6 +7,8 @@ import Contact from './components/Contact';
 import AccountDetails from './components/AccountDetails';
 import AddAccounts from './components/AddAccounts';
 import { connect } from 'react-redux';
+import EditForm from './components/EditForm';
+
 
 class App extends Component {
   render() {
@@ -20,6 +22,10 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
               <Route path="/newaccount" component={AddAccounts} />
+              <Route
+                path="/account/edit/:post_id"
+                component={EditForm}
+              />
               <Route path="/account/:post_id" component={AccountDetails} />
             </Switch>
           </div>
@@ -29,9 +35,9 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    accounts: state.accounts
+    accounts: state.accounts,
   };
 };
 

@@ -25,3 +25,34 @@
   border-bottom: 1px solid black;
   padding-bottom: 20px;
 }
+
+.description-text {
+  color: grey;
+}
+
+.title-text {
+  color: darkcyan;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.user-welcome,
+.collection .user-welcome {
+  background-color: royalblue;
+}
+
+.person-icon {
+  font-size: 5rem;
+}
+
+.header-items {
+  display: flex;
+  padding: 0.5rem 10rem;
+}
+
+.collection .collection-item.items {
+  padding-left: 0.5rem;
+}

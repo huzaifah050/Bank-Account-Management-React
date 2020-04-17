@@ -19,9 +19,6 @@ const Navbar = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
-            {/* <li>
-              <Link to="/newaccount">Add New Account</Link>
-            </li> */}
           </ul>
         </div>
       </nav>
